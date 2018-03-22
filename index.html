@@ -1,0 +1,80 @@
+<html>
+<head>
+	<title>Сборки Aceon'a</title>
+	<meta charset="utf-8"/>
+
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,600" rel="stylesheet">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+
+	<link href="css/styles.css" rel="stylesheet">
+	<script src="/js/scripts.js"></script>
+
+	<script src="/js/fuse.min.js"></script>
+	<script src="/js/modpacks.js"></script>
+	<script src="/js/modpack_scripts.js"></script>
+	<link href="css/modpack_styles.css" rel="stylesheet">
+</head>
+<body id="loading">
+	<div class="header">
+		<a class="header-menu-btn" href="javascript:">
+			<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+				<path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"></path>
+			</svg>
+		</a>
+	</div>
+	<div class="page-wrap">
+		<div class="page">
+			<form id="SearchForm" class="shadow-2 dynamic" autocomplete="off" onsubmit="return false">
+				<input id="SearchInput" placeholder="Поиск..." value="" autocomplete="off">
+				<div class="search-controls">
+					<div class="search-go">
+						<input id="SearchSubmit" type="submit" hidden>
+						<label class="circle-button" for="SearchSubmit">
+							<div class="button-icon"></div>
+						</label>
+					</div>
+					<div class="search-clear">
+						<a class="circle-button" href="javascript:">
+							<div class="button-icon close"></div>
+						</a>
+					</div>
+				</div>
+				<div class="search-bg"></div>
+			</form>
+			<div id="LoadingWrap">
+				<div class="spinner"></div>
+			</div>
+			<div id="ModpackList">
+				<div class="modpack-list-view-style-wrap">
+					<div class="modpack-list-view-style">
+						<a id="ModpackListViewToggle" href="javascript:">
+							<svg preserveAspectRatio="xMinYMin meet" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+								<path d="M4 11h5V5H4v6zm0 7h5v-6H4v6zm6 0h5v-6h-5v6zm6 0h5v-6h-5v6zm-6-7h5V5h-5v6zm6-6v6h5V5h-5z"></path>
+							</svg>
+							<svg preserveAspectRatio="xMinYMin meet" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+								<path d="M4 14h4v-4H4v4zm0 5h4v-4H4v4zM4 9h4V5H4v4zm5 5h12v-4H9v4zm0 5h12v-4H9v4zM9 5v4h12V5H9z"></path>
+							</svg>
+						</a>
+					</div>
+				</div>
+			</div>
+			<div id="ModpackInfo">
+				<img id="ModpackImage" class="shadow">
+				<div id="ModpackTitle"></div>
+				<div id="ModpackDlLinks"></div>
+				<div id="ModpackDetailsTable"></div>
+				<div id="ModpackModList"></div>
+				<a class="modpack-info-back shadow-4 btn-alt dynamic circle wave" href="#">
+					<div class="back-icon">
+						<svg preserveAspectRatio="xMinYMin meet" height="60" viewBox="0 0 24 24" width="60">
+							<path d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z"/>
+						</svg>
+					</div>
+				</a>
+			</div>
+			<div id="embeds" class="shadow-3"></div>
+		</div>
+	</div>
+</body>
+</html>
